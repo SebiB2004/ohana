@@ -1,40 +1,78 @@
-body{
+body,html{
     margin:0;
+    width:100%;
+
+}
+@font-face {
+    font-family: 'Sephir-Regular';
+    src: local('Sephir-Regular');
 }
 
 
 .logo{
-    height:70px;
-    width:70px;
+    height:90px;
+    width:90px;
 }
 
-.header{
+#header{
   display:flex;
-  height:100px;
+  flex-direction: row;
+  height: 130px;
+  margin-left:180px;
+  margin-right:188px;
+  top: 0;
   align-items:center;
-  justify-content:space-around;
-  position:absolute;
-  
+  justify-content:space-between;
+  position:relative ;
+  z-index:5;
+}
+#background{
+    top:0;
+    height:100vh;
+    width:100%;
+    position:absolute;
+    margin:0;   
+    z-index:1;
+
+
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    height:400px;
+    width:100%;
+    justify-content:space-around;
+    align-items:center;
+   position:relative;
+   z-index:3;
 }
 .links{
     display:flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
+    text-decoration: none;
+    font-size:25px;
+    font-family: 'Sephir-Regular';
+    color:black;
 }
-.background {
-  display:flex;
-  flex-direction: column;
-  position: relative;
 
+
+
+#imagine{
+    border: 1px solid black;
+    filter:grayscale(100%);
 }
-.cafea {
-    width: 100%;
-    height: 100%;
+#imagine:hover{
+    filter:none;
 }
 .portocaliu{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
     background-color:peru;
     width:100%;
-    height: 300px;
+    height: 1000px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: peru; 
